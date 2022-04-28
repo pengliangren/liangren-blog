@@ -194,7 +194,7 @@ export default DefaultTheme;
 - 更多配置信息参考可以参考这里：https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html
 
 ```yml
-name: lance-blog
+name: liangren-blog
 on:
   push:
     branches: [ main ]
