@@ -1,0 +1,20 @@
+{
+	"name": "liangren-blog",
+	"version": "1.0.0",
+	"description": "pengliangren-blog",
+	"main": "index.js",
+	"author": "pengliangren",
+	"license": "MIT",
+	"scripts": {
+		"start": "vitepress dev docs",
+		"build": "vitepress build docs",
+		"serve": "vitepress serve docs"
+	},
+	"devDependencies": {
+		"vitepress": "^0.22.3"
+	},
+	"dependencies": {
+		"vitepress-theme-demoblock": "^1.4.2"
+	},
+	"homepage": "https://pengliangren.github.io/liangren-blog/"
+}
