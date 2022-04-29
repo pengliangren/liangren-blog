@@ -28,8 +28,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       - name: Install and Build
         run: |
@@ -37,8 +39,8 @@ jobs:
           yarn build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@releases/v2
         with:
-          access_token: ${{ secrets.ACCESS_TOKEN }}
-          branch: gh-pages
-          folder: ./docs/.vitepress/dist/
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docs/.vitepress/dist
